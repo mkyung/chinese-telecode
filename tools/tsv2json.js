@@ -46,7 +46,7 @@ rl.on("line", function(line){
 
 rl.on("close", function(){
     fs.writeFile(
-        path.join(root, "data/lib.json"),
+        path.join(root, "data/dict.json"),
         JSON.stringify(dict),
         function(){
             console.log("Done exporting Unihan to JSON")
