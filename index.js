@@ -30,10 +30,9 @@ module.exports = function(text, options){
         if (options.codeType == "auto"){
             codes.push(telecode["sc"] || telecode["tc"] || "")
         } else {
-            codes.push(telecode[options.codeType])
+            codes.push(telecode[options.codeType] || "")
         }
     }
 
     return codes
 }
-
